@@ -31,7 +31,12 @@ class SearchGetter: ObservableObject{
                         await suggestion(JsonUrl: JsonUrl)
                     }
                 } else{
-                    return decoded.data!.items![0].suggestions!
+                    if (decoded.data!.items!.endIndex - 1 >= 1){
+                        return decoded.data!.items![1].suggestions!
+                    }
+                    else {
+                        return []
+                    }
                 }
             
             } catch {
@@ -113,20 +118,6 @@ class SearchGetter: ObservableObject{
         }
         return Prediction.init()
     }
-    
-//    static func inputFormatter(keywords: String)->String{
-//        var formattedKeywords = ""
-//        for char in keywords{
-//            if (char == " "){
-//                formattedKeywords.append("%20")
-//            }
-//            else {
-//                formattedKeywords.append(char)
-//            }
-//        }
-//        return formattedKeywords
-//    }
-    
     static func inputFormatter(keywords: String)->String{
         return keywords.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
     }

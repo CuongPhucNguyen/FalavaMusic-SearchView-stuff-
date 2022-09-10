@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9008031328BF7154000AB2B8 /* SearchPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008031228BF7154000AB2B8 /* SearchPrediction.swift */; };
+		9008031328BF7154000AB2B8 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008031228BF7154000AB2B8 /* SearchModel.swift */; };
 		9008031528BF7186000AB2B8 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008031428BF7186000AB2B8 /* SearchController.swift */; };
 		90098CCD28C615370085CD04 /* SuggestedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90098CCC28C615370085CD04 /* SuggestedRow.swift */; };
 		C61EC7FF28992F8C0076A052 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C61EC7FE28992F8C0076A052 /* Lottie */; };
@@ -62,7 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9008031228BF7154000AB2B8 /* SearchPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPrediction.swift; sourceTree = "<group>"; };
+		9008031228BF7154000AB2B8 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		9008031428BF7186000AB2B8 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		90098CCC28C615370085CD04 /* SuggestedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedRow.swift; sourceTree = "<group>"; };
 		C66A6E6328C797D50088FD85 /* CustomMusicScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMusicScroll.swift; sourceTree = "<group>"; };
@@ -119,7 +119,6 @@
 		9008031128BF7148000AB2B8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				9008031228BF7154000AB2B8 /* SearchPrediction.swift */,
 				9008031428BF7186000AB2B8 /* SearchController.swift */,
 			);
 			path = Search;
@@ -201,6 +200,7 @@
 		C6B3C10728919C7000221BA4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9008031228BF7154000AB2B8 /* SearchModel.swift */,
 				C6B3C10828919C8100221BA4 /* HomeModel.swift */,
 				C6A026F02893A58700992E6E /* AlbumModel.swift */,
 				C6A2C4712895315C00B56717 /* ListenModel.swift */,
@@ -376,7 +376,7 @@
 				C6B3C1262891A30100221BA4 /* PaperViews.swift in Sources */,
 				C6B3C10628919C6900221BA4 /* ApiHome.swift in Sources */,
 				E71BE89028BF59F800C43EA4 /* User.swift in Sources */,
-				9008031328BF7154000AB2B8 /* SearchPrediction.swift in Sources */,
+				9008031328BF7154000AB2B8 /* SearchModel.swift in Sources */,
 				C6A7E2B72894188300321F8A /* SplashScreen.swift in Sources */,
 				C6B3C10E28919D0300221BA4 /* ZingStruct.swift in Sources */,
 				C6A2C46A2894D51600B56717 /* AlbumScreen.swift in Sources */,

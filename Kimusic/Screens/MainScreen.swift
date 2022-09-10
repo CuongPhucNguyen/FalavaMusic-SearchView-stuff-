@@ -55,6 +55,9 @@ struct MainScreen: View {
     
     //    @AppStorage("MusicDataTitle") var MusicData : String?
     
+    //MARK: - Select View
+    @State var searchView: Bool = true
+    
     var body: some View {
         ZStack {
             GeometryReader{proxy in
@@ -80,7 +83,6 @@ struct MainScreen: View {
                     NavigationView{
                         SearchScreen()
                     }
-                    .applyBG()
                     .tag(Tab.search)
                     
                     NavigationView{
@@ -364,4 +366,16 @@ extension View{
                     .ignoresSafeArea()
             }
     }
+    @ViewBuilder
+    func isHidden(_ hidden: Bool, remove: Bool = false) -> some View {
+            if hidden {
+                if !remove {
+                    self.hidden()
+                }
+            } else {
+                self
+            }
+        }
 }
+
+
